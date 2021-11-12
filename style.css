@@ -1,0 +1,75 @@
+/* * {
+    border: red solid 1px;
+} */
+
+.page {
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.header {
+    max-width: 880px;
+    height: 74px;
+    margin: 45px auto 40px;
+    border-bottom: #545454 solid 1px;
+}
+
+.profile {
+    max-width: 880px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.profile__name {
+    color: white;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 48px;
+}
+
+.profile__about {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: white;
+}
+
+.profile__add-button {
+    width: 150px;
+    height: 50px;
+    border: white solid 2px;
+    position: relative;
+}
+
+.profile__cross {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.elements {
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+.element {
+    max-width: 282px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.element__photo {
+    max-width: 282px;
+    max-height: 282px;
+    border-radius: 10px 10px 0 0;
+}
+
+
+/* .profile__avatar {
+    margin: 0;
+} */
