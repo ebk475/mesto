@@ -1,0 +1,6 @@
+.element__title {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 20px;
+    align-items: baseline;
+}

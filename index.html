@@ -6,78 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./pages/index.css">
     <title>Mesto</title>
-    <base target="_blank">
 </head>
 
 <body class="page">
     <header class="header">
-        <img src="/images/logo.svg" alt="Логотип" class="header__logo">
+        <img class="header__logo" src="/images/logo.svg" alt="Логотип" class="header__logo">
     </header>
     <main>
-        <div class="profile">
+        <section class="profile">
             <div class="profile__info">
                 <img src="/images/Avatar.png" alt="Аватарка" class="profile__avatar">
-                <div>
-                    <h1 class="profile__name">Жак-Ив Кусто</h1>
+                <div class="profile__column">
+                    <div class="profile__line">
+                        <h1 class="profile__name">Жак-Ив Кусто</h1>
+                        <button class="profile__edit"></button>
+                    </div>
                     <p class="profile__about">Исследователь океана</p>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="0.5" y="0.5" width="23" height="23" stroke="white"/>
-                    <path d="M17 8.32827L9.60377 15.7666L8.28302 14.4194L15.6604 7L17 8.32827ZM7 17L8.96226 16.4118L7.58491 15.0835L7 17Z" fill="white"/>
-                    </svg>
                 </div>
             </div>
             <div class="profile__add-button">
                 <img src="/images/cross.svg" alt="Крестик" class="profile__cross">
             </div>
-        </div>
-        <div class="elements">
+        </section>
+        <section class="elements">
             <div class="element">
                 <img src="/images/kirill-pershin-1088404-unsplash.jpg" alt="" class="element__photo">
                 <div class="element__title">
-                    <h2 class="element__tit">Карачаевск</h2>
-                    <img src="/images/Like.svg" alt="" class="element__like">
+                    <h2 class="element__name">Карачаевск</h2>
+                    <svg class="element__like" width="22" height="19" fill="none" viewBox="0 0 22 19" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.2991 9.78586C22.567 7.54338 22.567 3.90213 20.2991 1.68186C18.0311 -0.560619 14.3486 -0.560619 12.0806 1.68186L10.9804 2.792L9.88007 1.70406C7.61215 -0.560619 3.92957 -0.560619 1.6841 1.68186C0.583822 2.76979 0 4.21297 0 5.74496C0 7.27695 0.606277 8.72013 1.6841 9.80806L10.9804 19L20.2991 9.78586ZM1.4371 5.74496C1.4371 4.59042 1.8862 3.52469 2.71702 2.72539C3.5703 1.88168 4.67058 1.45983 5.77086 1.45983C6.87114 1.45983 7.97142 1.88168 8.8247 2.72539L10.9804 4.83465L13.136 2.70318C14.8201 1.03798 17.582 1.03798 19.2437 2.70318C20.0521 3.50248 20.5236 4.56821 20.5236 5.72276C20.5236 6.8773 20.0745 7.94303 19.2437 8.74233L10.9804 16.9351L2.71702 8.76453C1.90865 7.94303 1.4371 6.8773 1.4371 5.74496Z" fill="black"/>
+                    </svg>
                 </div>
             </div>
             <div class="element">
                 <img src="/images/kirill-pershin-1088404-unsplash.jpg" alt="" class="element__photo">
                 <div class="element__title">
-                    <h2 class="element__tit">Карачаевск</h2>
-                    <img src="/images/Like.svg" alt="" class="element__like">
+                    <h2 class="element__name">Карачаевск</h2>
+                    <svg class="element__like" width="22" height="19" fill="none" viewBox="0 0 22 19" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.2991 9.78586C22.567 7.54338 22.567 3.90213 20.2991 1.68186C18.0311 -0.560619 14.3486 -0.560619 12.0806 1.68186L10.9804 2.792L9.88007 1.70406C7.61215 -0.560619 3.92957 -0.560619 1.6841 1.68186C0.583822 2.76979 0 4.21297 0 5.74496C0 7.27695 0.606277 8.72013 1.6841 9.80806L10.9804 19L20.2991 9.78586ZM1.4371 5.74496C1.4371 4.59042 1.8862 3.52469 2.71702 2.72539C3.5703 1.88168 4.67058 1.45983 5.77086 1.45983C6.87114 1.45983 7.97142 1.88168 8.8247 2.72539L10.9804 4.83465L13.136 2.70318C14.8201 1.03798 17.582 1.03798 19.2437 2.70318C20.0521 3.50248 20.5236 4.56821 20.5236 5.72276C20.5236 6.8773 20.0745 7.94303 19.2437 8.74233L10.9804 16.9351L2.71702 8.76453C1.90865 7.94303 1.4371 6.8773 1.4371 5.74496Z" fill="black"/>
+                    </svg>
                 </div>
             </div>
             <div class="element">
                 <img src="/images/kirill-pershin-1088404-unsplash.jpg" alt="" class="element__photo">
                 <div class="element__title">
-                    <h2 class="element__tit">Карачаевск</h2>
-                    <img src="/images/Like.svg" alt="" class="element__like">
+                    <h2 class="element__name">Карачаевск</h2>
+                    <svg class="element__like" width="22" height="19" fill="none" viewBox="0 0 22 19" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.2991 9.78586C22.567 7.54338 22.567 3.90213 20.2991 1.68186C18.0311 -0.560619 14.3486 -0.560619 12.0806 1.68186L10.9804 2.792L9.88007 1.70406C7.61215 -0.560619 3.92957 -0.560619 1.6841 1.68186C0.583822 2.76979 0 4.21297 0 5.74496C0 7.27695 0.606277 8.72013 1.6841 9.80806L10.9804 19L20.2991 9.78586ZM1.4371 5.74496C1.4371 4.59042 1.8862 3.52469 2.71702 2.72539C3.5703 1.88168 4.67058 1.45983 5.77086 1.45983C6.87114 1.45983 7.97142 1.88168 8.8247 2.72539L10.9804 4.83465L13.136 2.70318C14.8201 1.03798 17.582 1.03798 19.2437 2.70318C20.0521 3.50248 20.5236 4.56821 20.5236 5.72276C20.5236 6.8773 20.0745 7.94303 19.2437 8.74233L10.9804 16.9351L2.71702 8.76453C1.90865 7.94303 1.4371 6.8773 1.4371 5.74496Z" fill="black"/>
+                    </svg>
                 </div>
             </div>
             <div class="element">
                 <img src="/images/kirill-pershin-1088404-unsplash.jpg" alt="" class="element__photo">
                 <div class="element__title">
-                    <h2 class="element__tit">Карачаевск</h2>
-                    <img src="/images/Like.svg" alt="" class="element__like">
+                    <h2 class="element__name">Карачаевск</h2>
+                    <svg class="element__like" width="22" height="19" fill="none" viewBox="0 0 22 19" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.2991 9.78586C22.567 7.54338 22.567 3.90213 20.2991 1.68186C18.0311 -0.560619 14.3486 -0.560619 12.0806 1.68186L10.9804 2.792L9.88007 1.70406C7.61215 -0.560619 3.92957 -0.560619 1.6841 1.68186C0.583822 2.76979 0 4.21297 0 5.74496C0 7.27695 0.606277 8.72013 1.6841 9.80806L10.9804 19L20.2991 9.78586ZM1.4371 5.74496C1.4371 4.59042 1.8862 3.52469 2.71702 2.72539C3.5703 1.88168 4.67058 1.45983 5.77086 1.45983C6.87114 1.45983 7.97142 1.88168 8.8247 2.72539L10.9804 4.83465L13.136 2.70318C14.8201 1.03798 17.582 1.03798 19.2437 2.70318C20.0521 3.50248 20.5236 4.56821 20.5236 5.72276C20.5236 6.8773 20.0745 7.94303 19.2437 8.74233L10.9804 16.9351L2.71702 8.76453C1.90865 7.94303 1.4371 6.8773 1.4371 5.74496Z" fill="black"/>
+                    </svg>
                 </div>
             </div>
             <div class="element">
                 <img src="/images/kirill-pershin-1088404-unsplash.jpg" alt="" class="element__photo">
                 <div class="element__title">
-                    <h2 class="element__tit">Карачаевск</h2>
-                    <img src="/images/Like.svg" alt="" class="element__like">
+                    <h2 class="element__name">Карачаевск</h2>
+                    <svg class="element__like" width="22" height="19" fill="none" viewBox="0 0 22 19" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.2991 9.78586C22.567 7.54338 22.567 3.90213 20.2991 1.68186C18.0311 -0.560619 14.3486 -0.560619 12.0806 1.68186L10.9804 2.792L9.88007 1.70406C7.61215 -0.560619 3.92957 -0.560619 1.6841 1.68186C0.583822 2.76979 0 4.21297 0 5.74496C0 7.27695 0.606277 8.72013 1.6841 9.80806L10.9804 19L20.2991 9.78586ZM1.4371 5.74496C1.4371 4.59042 1.8862 3.52469 2.71702 2.72539C3.5703 1.88168 4.67058 1.45983 5.77086 1.45983C6.87114 1.45983 7.97142 1.88168 8.8247 2.72539L10.9804 4.83465L13.136 2.70318C14.8201 1.03798 17.582 1.03798 19.2437 2.70318C20.0521 3.50248 20.5236 4.56821 20.5236 5.72276C20.5236 6.8773 20.0745 7.94303 19.2437 8.74233L10.9804 16.9351L2.71702 8.76453C1.90865 7.94303 1.4371 6.8773 1.4371 5.74496Z" fill="black"/>
+                    </svg>
                 </div>
             </div>
             <div class="element">
                 <img src="/images/kirill-pershin-1088404-unsplash.jpg" alt="" class="element__photo">
                 <div class="element__title">
-                    <h2 class="element__tit">Карачаевск</h2>
-                    <img src="/images/Like.svg" alt="" class="element__like">
+                    <h2 class="element__name">Карачаевск</h2>
+                    <svg class="element__like" width="22" height="19" fill="none" viewBox="0 0 22 19" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.2991 9.78586C22.567 7.54338 22.567 3.90213 20.2991 1.68186C18.0311 -0.560619 14.3486 -0.560619 12.0806 1.68186L10.9804 2.792L9.88007 1.70406C7.61215 -0.560619 3.92957 -0.560619 1.6841 1.68186C0.583822 2.76979 0 4.21297 0 5.74496C0 7.27695 0.606277 8.72013 1.6841 9.80806L10.9804 19L20.2991 9.78586ZM1.4371 5.74496C1.4371 4.59042 1.8862 3.52469 2.71702 2.72539C3.5703 1.88168 4.67058 1.45983 5.77086 1.45983C6.87114 1.45983 7.97142 1.88168 8.8247 2.72539L10.9804 4.83465L13.136 2.70318C14.8201 1.03798 17.582 1.03798 19.2437 2.70318C20.0521 3.50248 20.5236 4.56821 20.5236 5.72276C20.5236 6.8773 20.0745 7.94303 19.2437 8.74233L10.9804 16.9351L2.71702 8.76453C1.90865 7.94303 1.4371 6.8773 1.4371 5.74496Z" fill="black"/>
+                    </svg>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="footer__text">© 2020 Mesto Russia</div>
     </footer>
+    <div class="popup">
+        <div class="popup__overlay"></div>
+        <div class="popup__content">
+            <svg class="popup__close" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M32 28.8L19.2 16L32 3.2L28.8 0L16 12.8L3.2 0L0 3.2L12.8 16L0 28.8L3.2 32L16 19.2L28.8 32L32 28.8Z" fill="white"/>
+            </svg>
+            <h2 class="popup__title">
+                Редактировать профиль
+            </h2>
+            <form class="popup__form">
+                <input type="text" class="popup__name" id="input_name" placeholder="Имя" value="Жак-Ив Кусто">
+                <input type="text" class="popup__about" id="input_about" placeholder="О себе" value="Исследователь океана">
+                <button type="submit" class="popup__save">Сохранить</button>
+            </form>
+        </div>
+    </div>
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>
