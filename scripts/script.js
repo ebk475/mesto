@@ -25,7 +25,7 @@ function formSubmitHandler(evt) {
     const About = document.querySelector(".profile__about");
     Name.textContent = nameInput.value
     About.textContent = aboutInput.value
-    popup.classList.remove("popup_opened");
+    popup.classList.remove("popup__opened");
 }
 popupCloseButton.addEventListener('click', close);
 popupOverlay.addEventListener('click', close);

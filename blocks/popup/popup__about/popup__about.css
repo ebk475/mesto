@@ -9,3 +9,12 @@
     margin: 0 auto 30px;
     outline: none;
 }
+
+@media screen and (max-width: 580px) {
+    .popup__about {
+        width: 238px;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 45px;
+    }
+}
