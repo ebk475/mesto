@@ -5,11 +5,16 @@
     position: relative;
     cursor: pointer;
     border-radius: 2px;
+    outline: none;
+    background-image: url(../../../images/cross.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: #000;
 }
 
 .profile__add-button:hover {
     opacity: 0.6;
-    transition: .5s ease-in-out;
+    transition: .2s linear;
 }
 
 @media screen and (max-width: 580px) {
