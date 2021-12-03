@@ -13,4 +13,4 @@
  - Grid Layout
  - Так же немного логики на JavaScript
 
-Сам проект доступен по этой [Ссылке]()
+Сам проект доступен по этой [Ссылке](https://ebk475.github.io/mesto/index.html)

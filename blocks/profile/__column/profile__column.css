@@ -1,4 +1,5 @@
 .profile__column {
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     gap: 18px;

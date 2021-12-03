@@ -1,17 +1,12 @@
-.popup__close {
-    position: absolute;
+.popup__cross {
+    width: 32px;
+    height: 32px;
     right: -40px;
     top: -40px;
-    cursor: pointer;
-}
-
-.popup__close:hover {
-    opacity: 0.6;
-    transition: .5s ease-in-out;
 }
 
 @media screen and (max-width: 580px) {
-    .popup__close {
+    .popup__cross {
         width: 20px;
         height: 20px;
         right: 0;
