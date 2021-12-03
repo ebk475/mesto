@@ -30,3 +30,55 @@ function formSubmitHandler(evt) {
 popupCloseButton.addEventListener('click', close);
 popupOverlay.addEventListener('click', close);
 popupSave.addEventListener('click', formSubmitHandler);
+
+
+const elements = [{
+        name: 'Индонезия',
+        src: '/images/Индонезия.jpg'
+    },
+    {
+        name: 'Мальдивские острова',
+        src: '/images/Мальдивские острова.jpg'
+    },
+    {
+        name: 'Морская черепаха',
+        src: '/images/Морская черепаха.jpg'
+    },
+    {
+        name: 'Торонто',
+        src: '/images/Торонто.jpg'
+    },
+    {
+        name: 'Мальдивы',
+        src: '/images/Мальдивы.jpg'
+    },
+    {
+        name: 'Кораллы',
+        src: '/images/Кораллы.jpg'
+    }
+];
+
+const сontainerEl = document.querySelector('.elements');
+const templateEl = document.querySelector('.template');
+
+function render() {
+    const html = elements
+        .map((item) => {
+            return getItem(item);
+        });
+
+    сontainerEl.append(...html);
+}
+
+function getItem(item) {
+    const newItem = templateEl.content.cloneNode(true);
+    const headerEl = newItem.querySelector('.element__name');
+    const photoEl = newItem.querySelector('.element__photo');
+
+    photoEl.src = item.src;
+    headerEl.textContent = item.name;
+
+    return newItem;
+}
+
+render()
