@@ -1,20 +1,17 @@
 .element__like {
-    width: 25px;
-    height: 21px;
-    cursor: pointer;
-    outline: none;
-    background-image: url(../../../images/Like.svg);
+    width: 30px;
+    height: 19px;
+    background: transparent url('../../../images/Like.svg');
     background-position: center;
     background-repeat: no-repeat;
-    background-color: white;
-    border: 1px solid #fff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
 }
 
 .element__like:hover {
     opacity: 0.5;
     transition: .2s linear;
-}
-
-.element__like:active {
-    background-color: black;
 }
