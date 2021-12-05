@@ -27,55 +27,12 @@
             <button class="profile__add-button" type="button"></button>
         </section>
         <section class="elements">
-            <!-- <div class="element">
-                <img src="/images/Индонезия.jpg" alt="Индонезия" class="element__photo">
-                <div class="element__title">
-                    <h2 class="element__name">Индонезия</h2>
-                    <button type="button" class="element__like"></button>
-                </div>
-            </div>
-            <div class="element">
-                <img src="./images/Мальдивские_острова.jpg" alt="Мальдивы" class="element__photo">
-                <div class="element__title">
-                    <h2 class="element__name">Мальдивские острова</h2>
-                    <button type="button" class="element__like"></button>
-                </div>
-            </div>
-            <div class="element">
-                <img src="./images/Морская_черепаха.jpg" alt="Черепаха" class="element__photo">
-                <div class="element__title">
-                    <h2 class="element__name">Морская черепаха</h2>
-                    <button type="button" class="element__like"></button>
-                </div>
-            </div>
-            <div class="element">
-                <img src="./images/Торонто.jpg" alt="Торонто" class="element__photo">
-                <div class="element__title">
-                    <h2 class="element__name">Торонто</h2>
-                    <button type="button" class="element__like"></button>
-                </div>
-            </div>
-            <div class="element">
-                <img src="./images/Мальдивы.jpg" alt="Мальдивы" class="element__photo">
-                <div class="element__title">
-                    <h2 class="element__name">Мальдивы</h2>
-                    <button type="button" class="element__like"></button>
-                </div>
-            </div>
-            <div class="element">
-                <img src="./images/Кораллы.jpg" alt="Кораллы" class="element__photo">
-                <div class="element__title">
-                    <h2 class="element__name">Кораллы</h2>
-                    <button type="button" class="element__like"></button>
-                </div>
-            </div> -->
         </section>
     </main>
     <footer class="footer">
         <p class="footer__text">&copy; 2020 Mesto Russia</p>
     </footer>
     <div class="popup">
-        <div class="popup__overlay"></div>
         <div class="popup__content">
             <button type="button" class="popup__close">
                 <img src="./images/Close_Icon.svg" alt="Крестик" class="popup__cross">
@@ -90,13 +47,38 @@
             </form>
         </div>
     </div>
+    <div class="popup popup_add">
+        <div class="popup__content_add">
+            <button type="button" class="popup__close_add">
+                <img src="./images/Close_Icon.svg" alt="Крестик" class="popup__cross_add">
+            </button>
+            <h2 class="popup__title_add">
+                Новое место
+            </h2>
+            <form class="popup__form_add" name="popup__form">
+                <input type="text" class="popup__bar popup__bar_name" placeholder="Название" name="add_name" required>
+                <input type="text" class="popup__bar popup__bar_link" placeholder="Ссылка на картинку" name="add_link" required>
+                <button type="submit" class="popup__create" name="create">Создать</button>
+            </form>
+        </div>
+    </div>
+    <div class="popup popup_img">
+        <form class="popup__photo">
+            <button type="button" class="popup__close">
+                <img src="./images/Close_Icon.svg" alt="Крестик" class="popup__cross">
+            </button>
+            <img class="popup__photo">
+            <h2 class="popup__photo-name"></h2>
+        </form>
+    </div>
     <template class="template">
     <div class="element">
-        <img src="" alt="" class="element__photo">
+        <img class="element__photo">
         <div class="element__title">
             <h2 class="element__name"></h2>
             <button type="button" class="element__like"></button>
         </div>
+        <button class="element__delete" type="button"></button>
     </div>
 </template>
 </body>
